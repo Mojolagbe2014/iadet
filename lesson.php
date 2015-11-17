@@ -10,7 +10,7 @@ $courseObj = new Course($dbObj); // Create an instance of course class/CPD class
 $lessonObj = new Lesson($dbObj);//Instantiate lesson
 $purchaseRecordObj = new PurchaseRecord($dbObj); //Instantiate purchase record
 
-//If user already login redirect the user to index page
+//If user already login redirect the user to index pag
 if(!isset($_SESSION['IADETUserName']) && !isset($_SESSION['IADETuserEmail'])) {
     $thisPage->redirectTo('index');
 }
