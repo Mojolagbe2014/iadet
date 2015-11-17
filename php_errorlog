@@ -1,0 +1,2 @@
+[05-Oct-2015 12:03:23 CST6CDT] PHP Fatal error:  Call to a member function fetchRaw() on a non-object in /home/iadet910/public_html/iadet/single-category-courses.php on line 150
+[06-Oct-2015 09:31:58 CST6CDT] PHP Fatal error:  Can't use function return value in write context in /home/iadet910/public_html/iadet/course-detail.php on line 136
