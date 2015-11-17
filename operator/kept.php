@@ -1,0 +1,3 @@
+<?php
+
+utf8_encode('<button data-id="'.$r['id'].'" data-picture="'.$r['picture'].'" data-name="'.$r['name'].'" class="btn btn-danger btn-small delete-user" title="Delete"><i class="btn-icon-only icon-trash"> </i></button> <button data-id="'.$r['id'].'" data-name="'.$r['name'].'" data-status="'.$r['status'].'"  class="btn '.$fetUserRolCol.' btn-small activate-user"  title="'.$fetUserRolTit.'"><i class="btn-icon-only '.$fetUserStat.'"> </i></button> ');
