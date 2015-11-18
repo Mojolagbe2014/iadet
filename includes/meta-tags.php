@@ -26,7 +26,7 @@
     <meta property="og:description" content="<?php echo $thisPage->description; ?>" />
     <meta property="twitter:title" content="<?php echo $thisPage->title; ?>" />
     <meta property="twitter:description" content="<?php echo $thisPage->description; ?>" />
-    <meta property="og:image" content="images/facebookprofile.jpg"/>
+    <meta property="og:image" content="<?php echo SITE_URL; ?>images/facebookprofile.jpg"/>
     <meta property="og:image:type" content="image/jpeg"/>
     <meta property="og:image:width" content="200"/>
     <meta property="og:image:height" content="200"/>
