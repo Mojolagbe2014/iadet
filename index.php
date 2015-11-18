@@ -15,12 +15,6 @@ $thisPage->keywords = WebsiteIndex::getSingle($dbObj, 'keywords', 1);
 $thisPage->author = WEBSITE_AUTHOR;
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
-<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
-<!--[if IE 8]>     <html class="ie ie8 lte9 lte8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
-<!--[if IE 9]>     <html class="ie ie9 lte9" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
-<!--[if gt IE 9]>  <html> <![endif]-->
-<!--[if !IE]><!--> 
 <html lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
 <head>
     <?php include ('includes/meta-tags.php'); ?>
