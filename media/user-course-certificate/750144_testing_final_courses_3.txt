@@ -1,0 +1,24 @@
+TEAM
+*Auto email sender -team
+*add video issue -team
+*blog feed causing https error -team
+
+JM
+
+* dynamic keywords -jm [add certain keywords to some events as tags]
+* make server technology invisible -jm ??
+* web-master tools 404 -jm ??
+* Google Data Highlighter ??
+* optimize images / mobile viewport -jm ??
+
+
+TG
+
+ * we want  to put about us text in the footer -tg
+* page performance -tg
+* Accessibility -tg
+*separate mobile content from main page -tg
+*events by categories and countries wider header -tg
+*upload-business-info has no sidebar -tg
+*side menu not working in job vacancy -tg
+*job vacancy social media icons -tg
