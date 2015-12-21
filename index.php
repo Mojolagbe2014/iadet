@@ -213,7 +213,8 @@ $thisPage->author = WEBSITE_AUTHOR;
                                         <?php
                                         $sponsorObj = new Sponsor($dbObj);
                                         foreach($sponsorObj->fetchRaw("*", " status = 1 ") as $sponsor){
-                                            echo '<a href="sponsor?id='.$sponsor['id'].'" class="small" style="margin:10px" title="'.$sponsor['name'].'"><img src="media/sponsor/'.$sponsor['logo'].'" style="width:120px;height:100px;"></a>';
+                                            $thumb = new ThumbNail("media/sponsor/".$sponsor['logo'], 300, 300); 
+                                            echo '<a href="sponsor?id='.$sponsor['id'].'" class="small" style="margin:10px" title="'.$sponsor['name'].'"><img src="'.$thumb.'"></a>';
                                         } 
                                         ?>
                                     </div>
