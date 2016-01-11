@@ -140,7 +140,10 @@ $thisPage->author = WEBSITE_AUTHOR;
                     <article class="course post post-2541 type-course status-publish has-post-thumbnail hentry course-category-food">
                         <div class="woocommerce" style="text-align: justify; display: block">
                             <h2><?php echo $sponsorObj->product; ?></h2>
-                            <div><img src="media/sponsor-image/<?php echo $sponsorObj->image; ?>" style="width:250px;height:200px;float: left;margin-right:10px"/><?php echo $sponsorObj->description; ?></div>
+                            <?php 
+                            $thumb = new ThumbNail("media/sponsor-image/".$sponsorObj->image, 250, 200); 
+                            ?>
+                            <div><img src="<?php echo $thumb; ?>" alt="<?php echo $sponsorObj->product; ?>" style="float: left;margin-right:10px"/><?php echo $sponsorObj->description; ?></div>
                         </div>
                     </article>
                 </div>
