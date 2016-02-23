@@ -73,6 +73,7 @@ $thisPage->author = WEBSITE_AUTHOR;
         box-shadow: 0 0 1px rgba(0,0,0, .75);
     color:#f3f3f3;
         }
+        input#access-courses {display:block;margin-top:-40px;margin-bottom:15px;margin-right:10px}
         @media screen and (max-width: 800px) { a#overlay-link {width:35%;margin:0px;padding:0px;}}
     </style>
     <link href="sweet-alert/sweetalert.css" rel="stylesheet" type="text/css"/>
@@ -91,11 +92,15 @@ $thisPage->author = WEBSITE_AUTHOR;
             </section>
             <!-- breadcrumb ends here -->
             <div class="content">
+                <div class="submit" >
+                            <input type="submit" id="access-courses" onclick="window.location='<?php echo MOODLE_URL; ?>'" value="Access Courses" />
+                        </div>
                 <div class="container">
                     <section class="content-full-width" id="primary">
+                        
                         <ul class="products">
                             <?php 
-                            foreach ($courseCategoryObj->fetchRaw("*", " parent=0 ", " RAND() ") as $courseCategory) {
+                            foreach ($courseCategoryObj->fetchRaw("*", " parent=0 ", " id ") as $courseCategory) {
                                 $courseCategoryObj->name = $courseCategory['name'];
                                 $courseCategoryObj->status = CourseCategory::getSingle($dbObj, '', 'status', " name = '".$courseCategoryObj->name."'"); 
                                 $courseCategoryObj->promotionAmount = CourseCategory::getSingle($dbObj, '', 'promotion_amount', " name = '".$courseCategoryObj->name."'");

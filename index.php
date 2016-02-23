@@ -95,7 +95,7 @@ $thisPage->author = WEBSITE_AUTHOR;
                                     <div class='dt-sc-hr-invisible  '></div>
                                     <?php 
                                     $categoryObj = new CourseCategory($dbMoObj, MOODLE_DB_PREFIX);
-                                    foreach($categoryObj->fetchRaw("*", " visible = 1 AND parent = 0 ", " RAND() LIMIT 4") as $featuredCategory){
+                                    foreach($categoryObj->fetchRaw("*", " visible = 1 AND parent = 0 ", " id LIMIT 4") as $featuredCategory){
                                         echo '<div  class="column dt-sc-one-half  first" style="text-align:justify; margin-right:10px;">'
                                             . '<h3>'.$featuredCategory['name'].'</h3>'
                                             . '<p style="text-align: justify;">'.StringManipulator::trimStringToFullWord(150, stripslashes(strip_tags($featuredCategory['description']))).'</p>'

@@ -51,14 +51,14 @@
                                 <nav id="main-menu">
                                     <ul id="menu-main-menu" class="menu">
                                         <li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-39 <?php echo $thisPage->active($_SERVER['REQUEST_URI'], 'index', 'current_page_item'); ?> menu-item-depth-0 menu-item-simple-parent "><a href="index">Home</a></li>
-                                        <li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 <?php echo $thisPage->active($_SERVER['REQUEST_URI'], 'my-courses', 'current_page_item').$thisPage->active($_SERVER['REQUEST_URI'], 'course-categories', 'current_page_item').$thisPage->active($_SERVER['REQUEST_URI'], 'my-logged-cpds', 'current_page_item'); ?> menu-item-simple-parent "><a href="<?php echo MOODLE_URL; ?>">Courses</a>
+                                        <li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 <?php echo $thisPage->active($_SERVER['REQUEST_URI'], 'my-courses', 'current_page_item').$thisPage->active($_SERVER['REQUEST_URI'], 'course-categories', 'current_page_item').$thisPage->active($_SERVER['REQUEST_URI'], 'my-logged-cpds', 'current_page_item'); ?> menu-item-simple-parent "><a href="<?php echo 'course-categories'; ?>">Courses</a>
+                                            <?php if(isset($_SESSION['IADETUserName']) && isset($_SESSION['IADETuserEmail'])) { ?>
                                             <ul class="sub-menu">
-                                                <li id="menu-item-1641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-depth-1"><a href="course-categories">Course Categories</a></li>
-                                                <?php if(isset($_SESSION['IADETUserName']) && isset($_SESSION['IADETuserEmail'])) { ?>
                                                 <li id="menu-item-1641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-depth-1"><a href="my-courses">My Courses</a></li>
                                                 <li id="menu-item-1641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-depth-1"><a href="my-logged-cpds">My Logged CPDs</a></li>
-                                                <?php } ?>
+                                                
                                             </ul>
+                                            <?php } ?>
                                         </li>
                                         <li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 <?php echo $thisPage->active($_SERVER['REQUEST_URI'], 'about', 'current_page_item').$thisPage->active($_SERVER['REQUEST_URI'], 'what-we-do', 'current_page_item'); ?> menu-item-simple-parent "><a href="about">About</a>
                                             <ul class="sub-menu">
