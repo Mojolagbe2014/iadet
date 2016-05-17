@@ -125,6 +125,7 @@ $thisPage->author = WEBSITE_AUTHOR;
                             </blockquote>
                             <section id="main-course" class="course-container">
                                 <?php 
+                                if($thisCategoryId != 1){
                                 //foreach($courseObj->fetchRaw("*", "visible = 1 AND category = $thisCategoryId ", "id") as $course){
                                 foreach($courseObj->fetchByCategory($thisCategoryId, MOODLE_DB_PREFIX."course_categories") as $course){
                                     $contextId = Context::getContextId($dbMoObj, MOODLE_DB_PREFIX, CONTEXT_COURSE, $course['id']);
@@ -146,6 +147,31 @@ $thisPage->author = WEBSITE_AUTHOR;
                                         </p>
                                         <p class="course-excerpt"></p>
                                     </section>
+                                </article>
+                                <?php } } else { ?>
+                                <article class="post-313 course type-course status-publish has-post-thumbnail hentry post">
+                                    <p>The International Academy of Dental Education and Training is pleased to offer the first ever blended program of Implant dentistry.</p>
+
+                                    <p>Blended learning is a form of education program in which you can learn the theoretical part through delivery of content and instruction via digital and online media with some element of student control over time, place, path, or pace. The practical part and skills will be delivered through Offline (face to face) learning session, distant learning, and online tutorial.</p>
+
+                                    <p>The Program is run over two stages, Certificate stage and Diploma stage -</p>
+
+                                    <p>The Certificate stage is composed of 6 consecutive teaching sessions (modules), each session is composed of several lessons (mostly online) and preclinical training session (offline) on plastic models, animal models and human cadavers.</p>
+
+                                    <p>In the Diploma stage you will be trained on placing implants, first under supervision in a mentoring centre, and then independently with distant learning tutorials and support from our staff.</p>
+
+                                    <p>The cost for the Blended Diploma in Implant Dentistry Course &nbsp;is &pound;4495 per year. This fee can be paid in 4 installments of &pound;1495 followed by &pound;1000 x 3. &nbsp;Our bank details would be sent once a candidate registers for a standing order to be set up. Payment is also accepted via Paypal using the email akpo@iadet.net.</p>
+
+                                    <p>Please note that access to the modules will only be given after the appropriate payment has been made.</p>
+
+                                    <p>The fee for the first year is discounted to &pound;3000 for our Nigerian students for the years 2016 and 2017. This can be paid in 3 installments of &pound;1000 each. Due to the current forex crisis in Nigeria, we have made an arrangement for payment to be made in Naira at a favourable forex exchange rate. Please contact our support team via <a href="mailto:support@iadet.net" rel="noreferrer">support@iadet.net</a> for help with paying using Naira.</p>
+
+                                    <p>This course can be started at any time.</p>
+
+                                    <p>If you have any questions about the program please feel free to contact us on (<a href="mailto:info@iadet.net" rel="noreferrer">info@iadet.net</a>).</p>
+
+                                    <p>We are looking forward to you joining our Blended Postgraduate Diploma In Implant Dentistry program.</p>
+
                                 </article>
                                 <?php } ?>
                                 
